@@ -17,6 +17,7 @@
 		71E9317014B9F3AE0093C709 /* RunCalcMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E9316F14B9F3AE0093C709 /* RunCalcMasterViewController.m */; };
 		71E9317314B9F3AE0093C709 /* RunCalcDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E9317214B9F3AE0093C709 /* RunCalcDetailViewController.m */; };
 		71E9317B14B9F9800093C709 /* RunCalcMultipleMasterDetailManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E9317A14B9F9800093C709 /* RunCalcMultipleMasterDetailManager.m */; };
+		71E9317D14BA22630093C709 /* runner.png in Resources */ = {isa = PBXBuildFile; fileRef = 71E9317C14BA22630093C709 /* runner.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		71E9317214B9F3AE0093C709 /* RunCalcDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunCalcDetailViewController.m; sourceTree = "<group>"; };
 		71E9317914B9F9800093C709 /* RunCalcMultipleMasterDetailManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunCalcMultipleMasterDetailManager.h; sourceTree = "<group>"; };
 		71E9317A14B9F9800093C709 /* RunCalcMultipleMasterDetailManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunCalcMultipleMasterDetailManager.m; sourceTree = "<group>"; };
+		71E9317C14BA22630093C709 /* runner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = runner.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		71E9314A14B9F3AD0093C709 = {
 			isa = PBXGroup;
 			children = (
+				71E9317C14BA22630093C709 /* runner.png */,
 				71E9315F14B9F3AE0093C709 /* RunningCalculator */,
 				71E9315814B9F3AE0093C709 /* Frameworks */,
 				71E9315614B9F3AE0093C709 /* Products */,
@@ -161,6 +164,7 @@
 			files = (
 				71E9316414B9F3AE0093C709 /* InfoPlist.strings in Resources */,
 				71E9316D14B9F3AE0093C709 /* MainStoryboard.storyboard in Resources */,
+				71E9317D14BA22630093C709 /* runner.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
