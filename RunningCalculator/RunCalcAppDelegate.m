@@ -7,17 +7,31 @@
 //
 
 #import "RunCalcAppDelegate.h"
+#import "RunCalcMultipleMasterDetailManager.h"
+
+@interface RunCalcAppDelegate()
+
+@property (strong,nonatomic)RunCalcMultipleMasterDetailManager* masterDetailManager;
+
+@end
+
 
 @implementation RunCalcAppDelegate
 
 @synthesize window = _window;
+@synthesize masterDetailManager = __masterDetailManager;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
     UISplitViewController *splitViewController = (UISplitViewController *)self.window.rootViewController;
-    UINavigationController *navigationController = [splitViewController.viewControllers lastObject];
-    splitViewController.delegate = (id)navigationController.topViewController;
+    
+    UIViewController* detail1 = [splitViewController.viewControllers objectAtIndex:1];
+    UIViewController* detail2 = [splitViewController.storyboard instantiateViewControllerWithIdentifier:@"Detail 2 Root"];
+    
+    self.masterDetailManager = [[RunCalcMultipleMasterDetailManager alloc] initWithSplitViewController:splitViewController
+                                                                        withDetailRootControllers:[NSArray arrayWithObjects:detail1,detail2,nil]];
+
     return YES;
 }
 							
