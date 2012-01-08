@@ -25,13 +25,8 @@
 {
     // Override point for customization after application launch.
     UISplitViewController *splitViewController = (UISplitViewController *)self.window.rootViewController;
-    
-    UIViewController* detail1 = [splitViewController.viewControllers objectAtIndex:1];
-    UIViewController* detail2 = [splitViewController.storyboard instantiateViewControllerWithIdentifier:@"Detail 2 Root"];
-    
-    self.masterDetailManager = [[RunCalcMultipleMasterDetailManager alloc] initWithSplitViewController:splitViewController
-                                                                        withDetailRootControllers:[NSArray arrayWithObjects:detail1,detail2,nil]];
-
+    UINavigationController *navigationController = [splitViewController.viewControllers lastObject];
+    splitViewController.delegate = (id)navigationController.topViewController;
     return YES;
 }
 							
