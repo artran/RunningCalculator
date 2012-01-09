@@ -7,7 +7,6 @@
 //
 
 #import "RunCalcMasterViewController.h"
-
 #import "RunCalcDetailViewController.h"
 
 @implementation RunCalcMasterViewController
@@ -75,5 +74,10 @@
      
     NSUInteger row = indexPath.row;
     NSLog(@"Table clicked at row %i", row);
+    NSString *identifier = [NSString stringWithFormat:@"Detail %i Root", row];
+    UIViewController* newDetail = [self.splitViewController.storyboard instantiateViewControllerWithIdentifier:identifier];
+    NSMutableArray* controllers = [self.splitViewController.viewControllers mutableCopy];
+    [controllers replaceObjectAtIndex:1 withObject:newDetail];
+    self.splitViewController.viewControllers = controllers;
 }
 @end

@@ -130,7 +130,7 @@
         <scene sceneID="50">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="49" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <navigationController storyboardIdentifier="Detail Root" id="42" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="Detail 0 Root" id="42" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="43">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -172,7 +172,7 @@
         <scene sceneID="V7t-bY-AcW">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3rY-3S-WPg" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <navigationController storyboardIdentifier="Detail 2 Root" id="ZOM-QP-dxz" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="Detail 1 Root" id="ZOM-QP-dxz" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="0M0-3l-wNa">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
