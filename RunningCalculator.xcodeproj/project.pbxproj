@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		710D489D14BCEB76001DACCA /* TrainingPaceDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 710D489C14BCEB75001DACCA /* TrainingPaceDetailViewController.m */; };
 		71E9315A14B9F3AE0093C709 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71E9315914B9F3AE0093C709 /* UIKit.framework */; };
 		71E9315C14B9F3AE0093C709 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71E9315B14B9F3AE0093C709 /* Foundation.framework */; };
 		71E9315E14B9F3AE0093C709 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71E9315D14B9F3AE0093C709 /* CoreGraphics.framework */; };
@@ -21,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		710D489B14BCEB75001DACCA /* TrainingPaceDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrainingPaceDetailViewController.h; sourceTree = "<group>"; };
+		710D489C14BCEB75001DACCA /* TrainingPaceDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrainingPaceDetailViewController.m; sourceTree = "<group>"; };
 		71E9315514B9F3AE0093C709 /* RunningCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RunningCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71E9315914B9F3AE0093C709 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		71E9315B14B9F3AE0093C709 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -95,6 +98,8 @@
 				71E9316F14B9F3AE0093C709 /* RunCalcMasterViewController.m */,
 				71E9317114B9F3AE0093C709 /* RunCalcDetailViewController.h */,
 				71E9317214B9F3AE0093C709 /* RunCalcDetailViewController.m */,
+				710D489B14BCEB75001DACCA /* TrainingPaceDetailViewController.h */,
+				710D489C14BCEB75001DACCA /* TrainingPaceDetailViewController.m */,
 				71E9316014B9F3AE0093C709 /* Supporting Files */,
 			);
 			path = RunningCalculator;
@@ -180,6 +185,7 @@
 				71E9317014B9F3AE0093C709 /* RunCalcMasterViewController.m in Sources */,
 				71E9317314B9F3AE0093C709 /* RunCalcDetailViewController.m in Sources */,
 				71E9317B14B9F9800093C709 /* RunCalcMultipleMasterDetailManager.m in Sources */,
+				710D489D14BCEB76001DACCA /* TrainingPaceDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +299,7 @@
 				71E9317814B9F3AE0093C709 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

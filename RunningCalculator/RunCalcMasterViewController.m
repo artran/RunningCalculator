@@ -73,7 +73,6 @@
     // Create and configure a new detail view controller appropriate for the selection.
      
     NSUInteger row = indexPath.row;
-    NSLog(@"Table clicked at row %i", row);
     NSString *identifier = [NSString stringWithFormat:@"Detail %i Root", row];
     UIViewController* newDetail = [self.splitViewController.storyboard instantiateViewControllerWithIdentifier:identifier];
     NSMutableArray* controllers = [self.splitViewController.viewControllers mutableCopy];
