@@ -7,7 +7,6 @@
 //
 
 #import "RunCalcMasterViewController.h"
-#import "RunCalcDetailViewController.h"
 
 @interface RunCalcMasterViewController()
 @property (nonatomic, weak) UINavigationController *detailNavigationController;
@@ -38,33 +37,6 @@
 	// Do any additional setup after loading the view, typically from a nib.
     self.detailNavigationController = [self.splitViewController.viewControllers lastObject];
     [self.tableView selectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0] animated:NO scrollPosition:UITableViewScrollPositionMiddle];
-}
-
-- (void)viewDidUnload
-{
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
-}
-
-- (void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
-}
-
-- (void)viewDidAppear:(BOOL)animated
-{
-    [super viewDidAppear:animated];
-}
-
-- (void)viewWillDisappear:(BOOL)animated
-{
-	[super viewWillDisappear:animated];
-}
-
-- (void)viewDidDisappear:(BOOL)animated
-{
-	[super viewDidDisappear:animated];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation

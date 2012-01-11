@@ -12,6 +12,4 @@
 
 @interface RunCalcMasterViewController : UITableViewController
 
-//@property (strong, nonatomic) RunCalcDetailViewController *detailViewController;
-
 @end

@@ -16,7 +16,6 @@
 		71E9316A14B9F3AE0093C709 /* RunCalcAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E9316914B9F3AE0093C709 /* RunCalcAppDelegate.m */; };
 		71E9316D14B9F3AE0093C709 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71E9316B14B9F3AE0093C709 /* MainStoryboard.storyboard */; };
 		71E9317014B9F3AE0093C709 /* RunCalcMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E9316F14B9F3AE0093C709 /* RunCalcMasterViewController.m */; };
-		71E9317314B9F3AE0093C709 /* RunCalcDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E9317214B9F3AE0093C709 /* RunCalcDetailViewController.m */; };
 		71E9317D14BA22630093C709 /* runner.png in Resources */ = {isa = PBXBuildFile; fileRef = 71E9317C14BA22630093C709 /* runner.png */; };
 /* End PBXBuildFile section */
 
@@ -36,8 +35,6 @@
 		71E9316C14B9F3AE0093C709 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		71E9316E14B9F3AE0093C709 /* RunCalcMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunCalcMasterViewController.h; sourceTree = "<group>"; };
 		71E9316F14B9F3AE0093C709 /* RunCalcMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunCalcMasterViewController.m; sourceTree = "<group>"; };
-		71E9317114B9F3AE0093C709 /* RunCalcDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunCalcDetailViewController.h; sourceTree = "<group>"; };
-		71E9317214B9F3AE0093C709 /* RunCalcDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunCalcDetailViewController.m; sourceTree = "<group>"; };
 		71E9317C14BA22630093C709 /* runner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = runner.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -91,8 +88,6 @@
 				71E9316B14B9F3AE0093C709 /* MainStoryboard.storyboard */,
 				71E9316E14B9F3AE0093C709 /* RunCalcMasterViewController.h */,
 				71E9316F14B9F3AE0093C709 /* RunCalcMasterViewController.m */,
-				71E9317114B9F3AE0093C709 /* RunCalcDetailViewController.h */,
-				71E9317214B9F3AE0093C709 /* RunCalcDetailViewController.m */,
 				710D489B14BCEB75001DACCA /* TrainingPaceDetailViewController.h */,
 				710D489C14BCEB75001DACCA /* TrainingPaceDetailViewController.m */,
 				71E9316014B9F3AE0093C709 /* Supporting Files */,
@@ -178,7 +173,6 @@
 				71E9316614B9F3AE0093C709 /* main.m in Sources */,
 				71E9316A14B9F3AE0093C709 /* RunCalcAppDelegate.m in Sources */,
 				71E9317014B9F3AE0093C709 /* RunCalcMasterViewController.m in Sources */,
-				71E9317314B9F3AE0093C709 /* RunCalcDetailViewController.m in Sources */,
 				710D489D14BCEB76001DACCA /* TrainingPaceDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
