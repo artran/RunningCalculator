@@ -75,11 +75,13 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     // Create and configure a new detail view controller appropriate for the selection.
-     
-    NSUInteger row = indexPath.row;
-    NSString *identifier = [NSString stringWithFormat:@"Detail %i Root", row];
-    UIViewController* newDetail = [self.splitViewController.storyboard instantiateViewControllerWithIdentifier:identifier];
-    NSArray *newDetailArr = [[NSArray alloc] initWithObjects:newDetail, nil];
-    [self.detailNavigationController setViewControllers:newDetailArr animated:YES];
+    UITableViewCell *selectedCell = [tableView cellForRowAtIndexPath:indexPath];
+    NSString *identifier = selectedCell.textLabel.text;
+    if (identifier) {
+        UIViewController* newDetail = [self.splitViewController.storyboard instantiateViewControllerWithIdentifier:identifier];
+        NSArray *newDetailArr = [[NSArray alloc] initWithObjects:newDetail, nil];
+        [self.detailNavigationController setViewControllers:newDetailArr animated:YES];
+
+    }
 }
 @end
