@@ -7,19 +7,10 @@
 //
 
 #import "RunCalcAppDelegate.h"
-#import "RunCalcMultipleMasterDetailManager.h"
-
-@interface RunCalcAppDelegate()
-
-@property (strong,nonatomic)RunCalcMultipleMasterDetailManager* masterDetailManager;
-
-@end
-
 
 @implementation RunCalcAppDelegate
 
 @synthesize window = _window;
-@synthesize masterDetailManager = __masterDetailManager;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {

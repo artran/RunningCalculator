@@ -17,7 +17,6 @@
 		71E9316D14B9F3AE0093C709 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71E9316B14B9F3AE0093C709 /* MainStoryboard.storyboard */; };
 		71E9317014B9F3AE0093C709 /* RunCalcMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E9316F14B9F3AE0093C709 /* RunCalcMasterViewController.m */; };
 		71E9317314B9F3AE0093C709 /* RunCalcDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E9317214B9F3AE0093C709 /* RunCalcDetailViewController.m */; };
-		71E9317B14B9F9800093C709 /* RunCalcMultipleMasterDetailManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E9317A14B9F9800093C709 /* RunCalcMultipleMasterDetailManager.m */; };
 		71E9317D14BA22630093C709 /* runner.png in Resources */ = {isa = PBXBuildFile; fileRef = 71E9317C14BA22630093C709 /* runner.png */; };
 /* End PBXBuildFile section */
 
@@ -39,8 +38,6 @@
 		71E9316F14B9F3AE0093C709 /* RunCalcMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunCalcMasterViewController.m; sourceTree = "<group>"; };
 		71E9317114B9F3AE0093C709 /* RunCalcDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunCalcDetailViewController.h; sourceTree = "<group>"; };
 		71E9317214B9F3AE0093C709 /* RunCalcDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunCalcDetailViewController.m; sourceTree = "<group>"; };
-		71E9317914B9F9800093C709 /* RunCalcMultipleMasterDetailManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunCalcMultipleMasterDetailManager.h; sourceTree = "<group>"; };
-		71E9317A14B9F9800093C709 /* RunCalcMultipleMasterDetailManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunCalcMultipleMasterDetailManager.m; sourceTree = "<group>"; };
 		71E9317C14BA22630093C709 /* runner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = runner.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -92,8 +89,6 @@
 				71E9316814B9F3AE0093C709 /* RunCalcAppDelegate.h */,
 				71E9316914B9F3AE0093C709 /* RunCalcAppDelegate.m */,
 				71E9316B14B9F3AE0093C709 /* MainStoryboard.storyboard */,
-				71E9317914B9F9800093C709 /* RunCalcMultipleMasterDetailManager.h */,
-				71E9317A14B9F9800093C709 /* RunCalcMultipleMasterDetailManager.m */,
 				71E9316E14B9F3AE0093C709 /* RunCalcMasterViewController.h */,
 				71E9316F14B9F3AE0093C709 /* RunCalcMasterViewController.m */,
 				71E9317114B9F3AE0093C709 /* RunCalcDetailViewController.h */,
@@ -184,7 +179,6 @@
 				71E9316A14B9F3AE0093C709 /* RunCalcAppDelegate.m in Sources */,
 				71E9317014B9F3AE0093C709 /* RunCalcMasterViewController.m in Sources */,
 				71E9317314B9F3AE0093C709 /* RunCalcDetailViewController.m in Sources */,
-				71E9317B14B9F9800093C709 /* RunCalcMultipleMasterDetailManager.m in Sources */,
 				710D489D14BCEB76001DACCA /* TrainingPaceDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
