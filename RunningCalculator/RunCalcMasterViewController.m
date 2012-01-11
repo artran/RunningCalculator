@@ -9,9 +9,13 @@
 #import "RunCalcMasterViewController.h"
 #import "RunCalcDetailViewController.h"
 
+@interface RunCalcMasterViewController()
+@property (nonatomic, weak) UINavigationController *detailNavigationController;
+@end
+
 @implementation RunCalcMasterViewController
 
-@synthesize detailViewController = _detailViewController;
+@synthesize detailNavigationController = _detailNavigationController;
 
 - (void)awakeFromNib
 {
@@ -32,7 +36,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    self.detailViewController = (RunCalcDetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
+    self.detailNavigationController = [self.splitViewController.viewControllers lastObject];
     [self.tableView selectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0] animated:NO scrollPosition:UITableViewScrollPositionMiddle];
 }
 
@@ -75,8 +79,7 @@
     NSUInteger row = indexPath.row;
     NSString *identifier = [NSString stringWithFormat:@"Detail %i Root", row];
     UIViewController* newDetail = [self.splitViewController.storyboard instantiateViewControllerWithIdentifier:identifier];
-    NSMutableArray* controllers = [self.splitViewController.viewControllers mutableCopy];
-    [controllers replaceObjectAtIndex:1 withObject:newDetail];
-    self.splitViewController.viewControllers = controllers;
+    NSArray *newDetailArr = [[NSArray alloc] initWithObjects:newDetail, nil];
+    [self.detailNavigationController setViewControllers:newDetailArr animated:YES];
 }
 @end
