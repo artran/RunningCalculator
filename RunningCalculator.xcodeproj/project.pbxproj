@@ -17,6 +17,8 @@
 		71E9316D14B9F3AE0093C709 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71E9316B14B9F3AE0093C709 /* MainStoryboard.storyboard */; };
 		71E9317014B9F3AE0093C709 /* RunCalcMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E9316F14B9F3AE0093C709 /* RunCalcMasterViewController.m */; };
 		71E9317D14BA22630093C709 /* runner.png in Resources */ = {isa = PBXBuildFile; fileRef = 71E9317C14BA22630093C709 /* runner.png */; };
+		71ECACD914C1E64B00F09566 /* RunCalcExplanationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ECACD814C1E64B00F09566 /* RunCalcExplanationViewController.m */; };
+		71ECACDC14C1E7EA00F09566 /* PredictRaceDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ECACDB14C1E7EA00F09566 /* PredictRaceDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,10 @@
 		71E9316E14B9F3AE0093C709 /* RunCalcMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunCalcMasterViewController.h; sourceTree = "<group>"; };
 		71E9316F14B9F3AE0093C709 /* RunCalcMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunCalcMasterViewController.m; sourceTree = "<group>"; };
 		71E9317C14BA22630093C709 /* runner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = runner.png; sourceTree = "<group>"; };
+		71ECACD714C1E64B00F09566 /* RunCalcExplanationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunCalcExplanationViewController.h; sourceTree = "<group>"; };
+		71ECACD814C1E64B00F09566 /* RunCalcExplanationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunCalcExplanationViewController.m; sourceTree = "<group>"; };
+		71ECACDA14C1E7EA00F09566 /* PredictRaceDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PredictRaceDetailViewController.h; sourceTree = "<group>"; };
+		71ECACDB14C1E7EA00F09566 /* PredictRaceDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PredictRaceDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +92,10 @@
 				71E9316814B9F3AE0093C709 /* RunCalcAppDelegate.h */,
 				71E9316914B9F3AE0093C709 /* RunCalcAppDelegate.m */,
 				71E9316B14B9F3AE0093C709 /* MainStoryboard.storyboard */,
+				71ECACDA14C1E7EA00F09566 /* PredictRaceDetailViewController.h */,
+				71ECACDB14C1E7EA00F09566 /* PredictRaceDetailViewController.m */,
+				71ECACD714C1E64B00F09566 /* RunCalcExplanationViewController.h */,
+				71ECACD814C1E64B00F09566 /* RunCalcExplanationViewController.m */,
 				71E9316E14B9F3AE0093C709 /* RunCalcMasterViewController.h */,
 				71E9316F14B9F3AE0093C709 /* RunCalcMasterViewController.m */,
 				710D489B14BCEB75001DACCA /* TrainingPaceDetailViewController.h */,
@@ -174,6 +184,8 @@
 				71E9316A14B9F3AE0093C709 /* RunCalcAppDelegate.m in Sources */,
 				71E9317014B9F3AE0093C709 /* RunCalcMasterViewController.m in Sources */,
 				710D489D14BCEB76001DACCA /* TrainingPaceDetailViewController.m in Sources */,
+				71ECACD914C1E64B00F09566 /* RunCalcExplanationViewController.m in Sources */,
+				71ECACDC14C1E7EA00F09566 /* PredictRaceDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
