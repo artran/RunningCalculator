@@ -203,8 +203,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="explainButtonPressed:" destination="4" eventType="touchUpInside" id="irW-r5-9W9"/>
-                                    <segue destination="OQa-50-JOW" kind="push" id="MsS-sv-xgu"/>
+                                    <segue destination="OQa-50-JOW" kind="push" id="wI4-H9-2cD"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -221,9 +220,9 @@
                         <outlet property="paceUnitChoice" destination="1ea-7c-vVh" id="52S-f6-gjt"/>
                         <outlet property="speedPaceLabel" destination="Nbx-CK-Nvo" id="KLy-ah-gI9"/>
                         <outlet property="tempoPaceLabel" destination="PDx-PA-5NB" id="xZ1-J5-JW5"/>
-                        <outlet property="timeTakenHrs" destination="Mvn-M3-dbo" id="2NZ-AW-SaP"/>
-                        <outlet property="timeTakenMins" destination="wnk-h9-dpw" id="ozf-qn-ZZp"/>
-                        <outlet property="timeTakenSecs" destination="wC9-rX-lPk" id="1Xv-NP-Xao"/>
+                        <outlet property="timeTakenHrsEditor" destination="Mvn-M3-dbo" id="2NZ-AW-SaP"/>
+                        <outlet property="timeTakenMinsEditor" destination="wnk-h9-dpw" id="ozf-qn-ZZp"/>
+                        <outlet property="timeTakenSecsEditor" destination="wC9-rX-lPk" id="1Xv-NP-Xao"/>
                         <outlet property="vo2PaceLabel" destination="Utd-NF-K5i" id="svg-nE-gMk"/>
                         <outlet property="yassoPaceLabel" destination="3Aj-Zq-gTz" id="3rX-Y7-e8S"/>
                     </connections>
@@ -234,7 +233,7 @@
         <scene sceneID="1DT-ii-jDi">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wxd-qf-2Ml" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController title="Explain training paces" id="OQa-50-JOW" customClass="RunCalcExplanationViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Explain training paces" title="Explain training paces" id="OQa-50-JOW" customClass="RunCalcExplanationViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tvo-ST-yTv">
                         <rect key="frame" x="0.0" y="64" width="703" height="704"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -565,9 +564,9 @@ The world of cross-training has expanded dramatically in recent years. While res
                 <relationship kind="outlet" name="paceUnitChoice" candidateClass="UISegmentedControl"/>
                 <relationship kind="outlet" name="speedPaceLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="tempoPaceLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="timeTakenHrs" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="timeTakenMins" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="timeTakenSecs" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="timeTakenHrsEditor" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="timeTakenMinsEditor" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="timeTakenSecsEditor" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="vo2PaceLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="yassoPaceLabel" candidateClass="UILabel"/>
             </relationships>
