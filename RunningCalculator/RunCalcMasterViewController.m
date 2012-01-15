@@ -10,11 +10,13 @@
 
 @interface RunCalcMasterViewController()
 @property (nonatomic, weak) UINavigationController *detailNavigationController;
+@property (nonatomic, weak) UIViewController *detailViewController;
 @end
 
 @implementation RunCalcMasterViewController
 
 @synthesize detailNavigationController = _detailNavigationController;
+@synthesize detailViewController = _detailViewController;
 
 - (void)awakeFromNib
 {
@@ -37,6 +39,7 @@
 	
     // Do any additional setup after loading the view, typically from a nib.
     self.detailNavigationController = [self.splitViewController.viewControllers lastObject];
+    self.detailViewController = self.detailNavigationController.topViewController;
     self.splitViewController.delegate = self;
     
     [self.tableView selectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0] animated:NO scrollPosition:UITableViewScrollPositionMiddle];
@@ -53,12 +56,15 @@
     UITableViewCell *selectedCell = [tableView cellForRowAtIndexPath:indexPath];
     NSString *identifier = selectedCell.textLabel.text;
     if (identifier) {
-        NSArray *rightBarButtonItems = [self.detailNavigationController.topViewController.navigationItem.rightBarButtonItems copy];
-        
-        UIViewController* newDetail = [self.splitViewController.storyboard instantiateViewControllerWithIdentifier:identifier];
-        newDetail.navigationItem.rightBarButtonItems = rightBarButtonItems;
-        NSArray *newDetailArr = [[NSArray alloc] initWithObjects:newDetail, nil];
-        [self.detailNavigationController setViewControllers:newDetailArr animated:YES];
+        if (![identifier isEqualToString:self.detailViewController.title]) {
+            NSArray *rightBarButtonItems = [self.detailViewController.navigationItem.rightBarButtonItems copy];
+            
+            UIViewController* newDetail = [self.splitViewController.storyboard instantiateViewControllerWithIdentifier:identifier];
+            newDetail.navigationItem.rightBarButtonItems = rightBarButtonItems;
+            NSArray *newDetailArr = [[NSArray alloc] initWithObjects:newDetail, nil];
+            self.detailViewController = newDetail;
+            [self.detailNavigationController setViewControllers:newDetailArr animated:YES];
+        }
 
     }
 }
@@ -70,13 +76,13 @@
        forPopoverController:(UIPopoverController *)pc
 {
     barButtonItem.title = self.title;
-    self.detailNavigationController.topViewController.navigationItem.rightBarButtonItem = barButtonItem;
+    self.detailViewController.navigationItem.rightBarButtonItem = barButtonItem;
 }
 
 - (void)splitViewController:(UISplitViewController *)svc
      willShowViewController:(UIViewController *)aViewController
   invalidatingBarButtonItem:(UIBarButtonItem *)button
 {
-    self.detailNavigationController.topViewController.navigationItem.rightBarButtonItem = nil;
+    self.detailViewController.navigationItem.rightBarButtonItem = nil;
 }
 @end
