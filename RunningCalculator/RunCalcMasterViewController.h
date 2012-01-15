@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@class RunCalcDetailViewController;
-
-@interface RunCalcMasterViewController : UITableViewController
+@interface RunCalcMasterViewController : UITableViewController <UISplitViewControllerDelegate>
 
 @end
