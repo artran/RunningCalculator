@@ -15,4 +15,13 @@
     return YES;
 }
 
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    UIWebView *webView = [[UIWebView alloc] init];
+    NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle]pathForResource:@"explainRacePredictor" ofType:@"html"] isDirectory:NO];
+    [webView loadRequest:[NSURLRequest requestWithURL:url]];
+    [segue.destinationViewController setView:webView];
+    
+    [segue.destinationViewController setTitle:@"Explain Race Predictor"];
+}
+
 @end

@@ -91,7 +91,17 @@
 - (IBAction)distanceEditor:(id)sender {
 }
 
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    UIWebView *webView = [[UIWebView alloc] init];
+    NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle]pathForResource:@"explainPaceCalculator" ofType:@"html"] isDirectory:NO];
+    [webView loadRequest:[NSURLRequest requestWithURL:url]];
+    [segue.destinationViewController setView:webView];
+    
+    [segue.destinationViewController setTitle:@"Explain Pace Calculator"];
+}
+
 #pragma mark DetailViewController implementation
+
 - (void)setRightNavigationButton:(UIBarButtonItem *)button {
     self.navigationItem.rightBarButtonItem = button;
 }

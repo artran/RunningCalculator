@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		710D489D14BCEB76001DACCA /* TrainingPaceDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 710D489C14BCEB75001DACCA /* TrainingPaceDetailViewController.m */; };
+		71B4B35B14D461600093F065 /* explainPaceCalculator.html in Resources */ = {isa = PBXBuildFile; fileRef = 71B4B35A14D461600093F065 /* explainPaceCalculator.html */; };
+		71B4B35E14D4749B0093F065 /* explainRacePredictor.html in Resources */ = {isa = PBXBuildFile; fileRef = 71B4B35D14D4749B0093F065 /* explainRacePredictor.html */; };
 		71E9315A14B9F3AE0093C709 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71E9315914B9F3AE0093C709 /* UIKit.framework */; };
 		71E9315C14B9F3AE0093C709 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71E9315B14B9F3AE0093C709 /* Foundation.framework */; };
 		71E9315E14B9F3AE0093C709 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71E9315D14B9F3AE0093C709 /* CoreGraphics.framework */; };
@@ -24,6 +26,8 @@
 /* Begin PBXFileReference section */
 		710D489B14BCEB75001DACCA /* TrainingPaceDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrainingPaceDetailViewController.h; sourceTree = "<group>"; };
 		710D489C14BCEB75001DACCA /* TrainingPaceDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrainingPaceDetailViewController.m; sourceTree = "<group>"; };
+		71B4B35A14D461600093F065 /* explainPaceCalculator.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = explainPaceCalculator.html; sourceTree = "<group>"; };
+		71B4B35D14D4749B0093F065 /* explainRacePredictor.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = explainRacePredictor.html; sourceTree = "<group>"; };
 		71E9315514B9F3AE0093C709 /* RunningCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RunningCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71E9315914B9F3AE0093C709 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		71E9315B14B9F3AE0093C709 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -58,6 +62,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		719C673C14D5E88D0043A823 /* Explanations */ = {
+			isa = PBXGroup;
+			children = (
+				71B4B35A14D461600093F065 /* explainPaceCalculator.html */,
+				71B4B35D14D4749B0093F065 /* explainRacePredictor.html */,
+			);
+			name = Explanations;
+			sourceTree = "<group>";
+		};
 		71E9314A14B9F3AD0093C709 = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +113,7 @@
 				71E9316F14B9F3AE0093C709 /* RunCalcMasterViewController.m */,
 				710D489B14BCEB75001DACCA /* TrainingPaceDetailViewController.h */,
 				710D489C14BCEB75001DACCA /* TrainingPaceDetailViewController.m */,
+				719C673C14D5E88D0043A823 /* Explanations */,
 				71E9316014B9F3AE0093C709 /* Supporting Files */,
 			);
 			path = RunningCalculator;
@@ -170,6 +184,8 @@
 				71E9316414B9F3AE0093C709 /* InfoPlist.strings in Resources */,
 				71E9316D14B9F3AE0093C709 /* MainStoryboard.storyboard in Resources */,
 				71E9317D14BA22630093C709 /* runner.png in Resources */,
+				71B4B35B14D461600093F065 /* explainPaceCalculator.html in Resources */,
+				71B4B35E14D4749B0093F065 /* explainRacePredictor.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
