@@ -15,6 +15,13 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    // We need to set the splitViewControllerDelegate here so that the initial
+    // has the correct buttons whatever the orientation it starts in. It will be
+    // overridden in the masterViewController once that has loaded.
+    UISplitViewController *splitViewController = (UISplitViewController *)self.window.rootViewController;
+    UINavigationController *navigationController = [splitViewController.viewControllers objectAtIndex:0];
+    splitViewController.delegate = (id)navigationController.topViewController;
     return YES;
 }
 							
