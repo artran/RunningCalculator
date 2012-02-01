@@ -9,14 +9,12 @@
 #import "RunCalcMasterViewController.h"
 
 @interface RunCalcMasterViewController()
-@property (nonatomic, weak) UINavigationController *detailNavigationController;
-@property (nonatomic, weak) UIViewController *detailViewController;
+@property (nonatomic, weak) UIViewController *currentDetailViewController;
 @end
 
 @implementation RunCalcMasterViewController
 
-@synthesize detailNavigationController = _detailNavigationController;
-@synthesize detailViewController = _detailViewController;
+@synthesize currentDetailViewController = _currentDetailViewController;
 
 - (void)awakeFromNib
 {
@@ -38,51 +36,57 @@
     [super viewDidLoad];
 	
     // Do any additional setup after loading the view, typically from a nib.
-    self.detailNavigationController = [self.splitViewController.viewControllers lastObject];
-    self.detailViewController = self.detailNavigationController.topViewController;
+    UINavigationController *detailNavigationController = [self.splitViewController.viewControllers lastObject];
+    self.currentDetailViewController = detailNavigationController.topViewController;
     self.splitViewController.delegate = self;
+    detailNavigationController.delegate = self;
     
     [self.tableView selectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0] animated:NO scrollPosition:UITableViewScrollPositionMiddle];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-    // Return YES for supported orientations
     return YES;
 }
 
+#pragma mark - UITableViewDelegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     // Create and configure a new detail view controller appropriate for the selection.
     UITableViewCell *selectedCell = [tableView cellForRowAtIndexPath:indexPath];
     NSString *identifier = selectedCell.textLabel.text;
     if (identifier) {
-        if (![identifier isEqualToString:self.detailViewController.title]) {
-            NSArray *rightBarButtonItems = [self.detailViewController.navigationItem.rightBarButtonItems copy];
-            
+        if (![identifier isEqualToString:self.currentDetailViewController.title]) {
             UIViewController* newDetail = [self.splitViewController.storyboard instantiateViewControllerWithIdentifier:identifier];
-            newDetail.navigationItem.rightBarButtonItems = rightBarButtonItems;
-            NSArray *newDetailArr = [[NSArray alloc] initWithObjects:newDetail, nil];
-            self.detailViewController = newDetail;
-            [self.detailNavigationController setViewControllers:newDetailArr animated:YES];
+            NSArray *newDetailArr = [NSArray arrayWithObject:newDetail];
+            
+            [self.currentDetailViewController.navigationController setViewControllers:newDetailArr animated:YES];
+            // delegate will be told of the change so it can handle nav buttons, etc.
         }
 
     }
 }
 
-#pragma mark UISplitViewControllerDelegate implementation
+#pragma mark - UISplitViewControllerDelegate
 - (void)splitViewController:(UISplitViewController *)svc
      willHideViewController:(UIViewController *)aViewController
           withBarButtonItem:(UIBarButtonItem *)barButtonItem
        forPopoverController:(UIPopoverController *)pc
 {
     barButtonItem.title = self.title;
-    self.detailViewController.navigationItem.rightBarButtonItem = barButtonItem;
+    self.currentDetailViewController.navigationItem.rightBarButtonItem = barButtonItem;
 }
 
 - (void)splitViewController:(UISplitViewController *)svc
      willShowViewController:(UIViewController *)aViewController
   invalidatingBarButtonItem:(UIBarButtonItem *)button
 {
-    self.detailViewController.navigationItem.rightBarButtonItem = nil;
+    self.currentDetailViewController.navigationItem.rightBarButtonItem = nil;
+}
+
+#pragma mark - UINavigationControllerDelegate
+- (void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated
+{
+    viewController.navigationItem.rightBarButtonItem = self.currentDetailViewController.navigationItem.rightBarButtonItem;
+    self.currentDetailViewController = viewController;
 }
 @end

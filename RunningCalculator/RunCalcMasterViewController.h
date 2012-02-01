@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RunCalcMasterViewController : UITableViewController <UISplitViewControllerDelegate>
+@interface RunCalcMasterViewController : UITableViewController <UISplitViewControllerDelegate, UINavigationControllerDelegate>
 
 @end

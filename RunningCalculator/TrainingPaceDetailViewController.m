@@ -98,6 +98,8 @@
     [segue.destinationViewController setView:webView];
     
     [segue.destinationViewController setTitle:@"Explain Pace Calculator"];
+    
+//    ((UIViewController *) segue.destinationViewController).navigationItem.rightBarButtonItems = self.navigationItem.rightBarButtonItems;
 }
 
 #pragma mark DetailViewController implementation
