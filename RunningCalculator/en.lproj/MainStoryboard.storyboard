@@ -91,6 +91,9 @@
                                     <segment title="min/km"/>
                                     <segment title="min/mile"/>
                                 </segments>
+                                <connections>
+                                    <action selector="paceDisplayUnitChanged:" destination="4" eventType="valueChanged" id="9NP-7A-AiR"/>
+                                </connections>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="VBx-8U-CLt">
                                 <rect key="frame" x="161" y="262" width="381" height="37"/>
@@ -470,12 +473,40 @@
             <point key="canvasLocation" x="1048" y="1238"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="PredictRaceDetailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PredictRaceDetailViewController.h"/>
+        </class>
+        <class className="RunCalcExplanationViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/RunCalcExplanationViewController.h"/>
+        </class>
+        <class className="RunCalcMasterViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/RunCalcMasterViewController.h"/>
+        </class>
+        <class className="TrainingPaceDetailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TrainingPaceDetailViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="distanceEditor" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="distanceUnitChoice" candidateClass="UISegmentedControl"/>
+                <relationship kind="outlet" name="easyPaceLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="longPaceLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="paceUnitChoice" candidateClass="UISegmentedControl"/>
+                <relationship kind="outlet" name="speedPaceLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="tempoPaceLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="timeTakenHrsEditor" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="timeTakenMinsEditor" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="timeTakenSecsEditor" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="vo2PaceLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="yassoPaceLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="RQv-Yd-pb1"/>
+        <segue reference="wI4-H9-2cD"/>
     </inferredMetricsTieBreakers>
 </document>

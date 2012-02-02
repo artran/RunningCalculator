@@ -65,6 +65,12 @@
     [self setupCalculation];
 }
 
+// Respond to the pace choice changing by recalculating paces
+- (IBAction)paceDisplayUnitChanged:(id)sender {
+    self.metricPace = (self.paceUnitChoice.selectedSegmentIndex == 0);
+    [self calculatePaces];
+}
+
 - (void)viewDidUnload
 {
     [self setDistanceEditor:nil];
@@ -98,14 +104,6 @@
     [segue.destinationViewController setView:webView];
     
     [segue.destinationViewController setTitle:@"Explain Pace Calculator"];
-    
-//    ((UIViewController *) segue.destinationViewController).navigationItem.rightBarButtonItems = self.navigationItem.rightBarButtonItems;
-}
-
-#pragma mark DetailViewController implementation
-
-- (void)setRightNavigationButton:(UIBarButtonItem *)button {
-    self.navigationItem.rightBarButtonItem = button;
 }
 
 #pragma mark calculator implementation
@@ -174,13 +172,6 @@
     self.yassoPaceLabel.text = [NSString stringWithFormat:@"%@ min/800", [self paceForSpeed:velYasso]];
     self.metricPace = oldMetricPace;
 }
-
-// Respond to the pace choice changing by recalculating paces
-//- (void) toggleMetric {
-//    self.metricPace = (self.paceUnitChoice.selectedSegmentIndex == 0);
-//    [self calculatePaces];
-//}
-
 
 // Takes a speed in metres / minute a converts it to a string representing a pace in
 // minutes per mile or km.   
