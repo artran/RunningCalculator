@@ -12,7 +12,8 @@
 		713F4B7914DD821100728173 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71E9315914B9F3AE0093C709 /* UIKit.framework */; };
 		713F4B7A14DD821100728173 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71E9315B14B9F3AE0093C709 /* Foundation.framework */; };
 		713F4B8014DD821100728173 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 713F4B7E14DD821100728173 /* InfoPlist.strings */; };
-		713F4B8314DD821100728173 /* RunCalcTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 713F4B8214DD821100728173 /* RunCalcTests.m */; };
+		713F4B8314DD821100728173 /* RunCalcMathsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 713F4B8214DD821100728173 /* RunCalcMathsTests.m */; };
+		713F4B8D14DD9CF500728173 /* RunCalcMaths.m in Sources */ = {isa = PBXBuildFile; fileRef = 713F4B8C14DD9CF500728173 /* RunCalcMaths.m */; };
 		71B4B35B14D461600093F065 /* explainPaceCalculator.html in Resources */ = {isa = PBXBuildFile; fileRef = 71B4B35A14D461600093F065 /* explainPaceCalculator.html */; };
 		71B4B35E14D4749B0093F065 /* explainRacePredictor.html in Resources */ = {isa = PBXBuildFile; fileRef = 71B4B35D14D4749B0093F065 /* explainRacePredictor.html */; };
 		71E9315A14B9F3AE0093C709 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71E9315914B9F3AE0093C709 /* UIKit.framework */; };
@@ -45,9 +46,11 @@
 		713F4B7714DD821100728173 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		713F4B7D14DD821100728173 /* RunCalcTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RunCalcTests-Info.plist"; sourceTree = "<group>"; };
 		713F4B7F14DD821100728173 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		713F4B8114DD821100728173 /* RunCalcTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunCalcTests.h; sourceTree = "<group>"; };
-		713F4B8214DD821100728173 /* RunCalcTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunCalcTests.m; sourceTree = "<group>"; };
+		713F4B8114DD821100728173 /* RunCalcMathsTests.h */ = {isa = PBXFileReference; path = RunCalcMathsTests.h; sourceTree = "<group>"; };
+		713F4B8214DD821100728173 /* RunCalcMathsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunCalcMathsTests.m; sourceTree = "<group>"; };
 		713F4B8414DD821100728173 /* RunCalcTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RunCalcTests-Prefix.pch"; sourceTree = "<group>"; };
+		713F4B8B14DD9CF500728173 /* RunCalcMaths.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RunCalcMaths.h; path = ../RunCalcTests/RunCalcMaths.h; sourceTree = "<group>"; };
+		713F4B8C14DD9CF500728173 /* RunCalcMaths.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RunCalcMaths.m; path = ../RunCalcTests/RunCalcMaths.m; sourceTree = "<group>"; };
 		71B4B35A14D461600093F065 /* explainPaceCalculator.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = explainPaceCalculator.html; sourceTree = "<group>"; };
 		71B4B35D14D4749B0093F065 /* explainRacePredictor.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = explainRacePredictor.html; sourceTree = "<group>"; };
 		71E9315514B9F3AE0093C709 /* RunningCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RunningCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,8 +100,8 @@
 		713F4B7B14DD821100728173 /* RunCalcTests */ = {
 			isa = PBXGroup;
 			children = (
-				713F4B8114DD821100728173 /* RunCalcTests.h */,
-				713F4B8214DD821100728173 /* RunCalcTests.m */,
+				713F4B8114DD821100728173 /* RunCalcMathsTests.h */,
+				713F4B8214DD821100728173 /* RunCalcMathsTests.m */,
 				713F4B7C14DD821100728173 /* Supporting Files */,
 			);
 			path = RunCalcTests;
@@ -168,6 +171,8 @@
 				71E9316F14B9F3AE0093C709 /* RunCalcMasterViewController.m */,
 				710D489B14BCEB75001DACCA /* TrainingPaceDetailViewController.h */,
 				710D489C14BCEB75001DACCA /* TrainingPaceDetailViewController.m */,
+				713F4B8B14DD9CF500728173 /* RunCalcMaths.h */,
+				713F4B8C14DD9CF500728173 /* RunCalcMaths.m */,
 				719C673C14D5E88D0043A823 /* Explanations */,
 				71E9316014B9F3AE0093C709 /* Supporting Files */,
 			);
@@ -295,7 +300,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				713F4B8314DD821100728173 /* RunCalcTests.m in Sources */,
+				713F4B8314DD821100728173 /* RunCalcMathsTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,6 +314,7 @@
 				710D489D14BCEB76001DACCA /* TrainingPaceDetailViewController.m in Sources */,
 				71ECACD914C1E64B00F09566 /* RunCalcExplanationViewController.m in Sources */,
 				71ECACDC14C1E7EA00F09566 /* PredictRaceDetailViewController.m in Sources */,
+				713F4B8D14DD9CF500728173 /* RunCalcMaths.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
