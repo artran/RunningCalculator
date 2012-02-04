@@ -7,6 +7,7 @@
 //
 
 #import "TrainingPaceDetailViewController.h"
+#import "RunCalcMaths.h"
 
 @interface TrainingPaceDetailViewController()
 @property (weak, nonatomic) IBOutlet UITextField *distanceEditor;
@@ -31,12 +32,8 @@
 @property (nonatomic) BOOL metricPace;
 
 - (void) setupCalculation;
-- (float) vo2ForVelocity:(float)vel;
-- (float) velocityForVO2:(float)VO2;
-- (float) percentVO2MaxForTime:(float)minutes;
 - (void) calculatePaces;
 - (NSString *) paceForSpeed:(float)speed;
-//- (void) toggleMetric;
 @end
 
 @implementation TrainingPaceDetailViewController
@@ -125,32 +122,17 @@
     
     self.speed = self.metresRaced / self.minsTaken;
     
-    self.vo2Max = [self vo2ForVelocity:self.speed] / [self percentVO2MaxForTime:self.minsTaken];
+    self.vo2Max = [RunCalcMaths vo2ForVelocity:self.speed] / [RunCalcMaths percentVO2MaxForTime:self.minsTaken];
     
     [self calculatePaces];
 }
 
-// Takes a velocity and converts it to a VO2 level.   
--(float) vo2ForVelocity:(float)vel {
-    return (-4.60 + 0.182258 * vel + 0.000104 * vel * vel);
-}
-
-// Takes a VO2 measurement and converts it to a velocity.
--(float) velocityForVO2:(float)VO2 {
-    return (29.54 + 5.000663 * VO2 - 0.007546 * VO2 * VO2);
-}
-
-// Takes a time in minutes and uses EQ 2 to convert it to a percent of VO2 maximum.   
--(float) percentVO2MaxForTime:(float)minutes {
-    return (0.8 + 0.1894393 * exp(-0.012778 * minutes) + 0.2989558 * exp(-0.1932695 * minutes));
-}
-
 -(void) calculatePaces {
-    float velEasy = [self velocityForVO2:(self.vo2Max * .7)];
-    float velTempo = [self velocityForVO2:(self.vo2Max * .88)];
-    float velVo2 = [self velocityForVO2:(self.vo2Max)];
-    float velSpeed = [self velocityForVO2:(self.vo2Max * 1.1)];
-    float velLong = [self velocityForVO2:(self.vo2Max * .6)];
+    float velEasy = [RunCalcMaths velocityForVO2:(self.vo2Max * .7)];
+    float velTempo = [RunCalcMaths velocityForVO2:(self.vo2Max * .88)];
+    float velVo2 = [RunCalcMaths velocityForVO2:(self.vo2Max)];
+    float velSpeed = [RunCalcMaths velocityForVO2:(self.vo2Max * 1.1)];
+    float velLong = [RunCalcMaths velocityForVO2:(self.vo2Max * .6)];
     float velYasso = velVo2 * 1.95;  
     
     NSString *toAppend;
