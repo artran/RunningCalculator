@@ -16,6 +16,8 @@
 		713F4B8D14DD9CF500728173 /* RunCalcMaths.m in Sources */ = {isa = PBXBuildFile; fileRef = 713F4B8C14DD9CF500728173 /* RunCalcMaths.m */; };
 		71B4B35B14D461600093F065 /* explainPaceCalculator.html in Resources */ = {isa = PBXBuildFile; fileRef = 71B4B35A14D461600093F065 /* explainPaceCalculator.html */; };
 		71B4B35E14D4749B0093F065 /* explainRacePredictor.html in Resources */ = {isa = PBXBuildFile; fileRef = 71B4B35D14D4749B0093F065 /* explainRacePredictor.html */; };
+		71C7477014F6EB9800A74071 /* HeartRateDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71C7476F14F6EB9800A74071 /* HeartRateDetailViewController.m */; };
+		71C7477314F6EFB000A74071 /* explainHeartRateRanges.html in Resources */ = {isa = PBXBuildFile; fileRef = 71C7477214F6EFB000A74071 /* explainHeartRateRanges.html */; };
 		71E9315A14B9F3AE0093C709 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71E9315914B9F3AE0093C709 /* UIKit.framework */; };
 		71E9315C14B9F3AE0093C709 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71E9315B14B9F3AE0093C709 /* Foundation.framework */; };
 		71E9315E14B9F3AE0093C709 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71E9315D14B9F3AE0093C709 /* CoreGraphics.framework */; };
@@ -46,13 +48,16 @@
 		713F4B7714DD821100728173 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		713F4B7D14DD821100728173 /* RunCalcTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RunCalcTests-Info.plist"; sourceTree = "<group>"; };
 		713F4B7F14DD821100728173 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		713F4B8114DD821100728173 /* RunCalcMathsTests.h */ = {isa = PBXFileReference; path = RunCalcMathsTests.h; sourceTree = "<group>"; };
+		713F4B8114DD821100728173 /* RunCalcMathsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunCalcMathsTests.h; sourceTree = "<group>"; };
 		713F4B8214DD821100728173 /* RunCalcMathsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunCalcMathsTests.m; sourceTree = "<group>"; };
 		713F4B8414DD821100728173 /* RunCalcTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RunCalcTests-Prefix.pch"; sourceTree = "<group>"; };
 		713F4B8B14DD9CF500728173 /* RunCalcMaths.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RunCalcMaths.h; path = ../RunCalcTests/RunCalcMaths.h; sourceTree = "<group>"; };
 		713F4B8C14DD9CF500728173 /* RunCalcMaths.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RunCalcMaths.m; path = ../RunCalcTests/RunCalcMaths.m; sourceTree = "<group>"; };
 		71B4B35A14D461600093F065 /* explainPaceCalculator.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = explainPaceCalculator.html; sourceTree = "<group>"; };
 		71B4B35D14D4749B0093F065 /* explainRacePredictor.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = explainRacePredictor.html; sourceTree = "<group>"; };
+		71C7476E14F6EB9800A74071 /* HeartRateDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeartRateDetailViewController.h; sourceTree = "<group>"; };
+		71C7476F14F6EB9800A74071 /* HeartRateDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeartRateDetailViewController.m; sourceTree = "<group>"; };
+		71C7477214F6EFB000A74071 /* explainHeartRateRanges.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = explainHeartRateRanges.html; sourceTree = "<group>"; };
 		71E9315514B9F3AE0093C709 /* RunningCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RunningCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71E9315914B9F3AE0093C709 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		71E9315B14B9F3AE0093C709 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -122,6 +127,7 @@
 			children = (
 				71B4B35A14D461600093F065 /* explainPaceCalculator.html */,
 				71B4B35D14D4749B0093F065 /* explainRacePredictor.html */,
+				71C7477214F6EFB000A74071 /* explainHeartRateRanges.html */,
 			);
 			name = Explanations;
 			sourceTree = "<group>";
@@ -171,6 +177,8 @@
 				71E9316F14B9F3AE0093C709 /* RunCalcMasterViewController.m */,
 				710D489B14BCEB75001DACCA /* TrainingPaceDetailViewController.h */,
 				710D489C14BCEB75001DACCA /* TrainingPaceDetailViewController.m */,
+				71C7476E14F6EB9800A74071 /* HeartRateDetailViewController.h */,
+				71C7476F14F6EB9800A74071 /* HeartRateDetailViewController.m */,
 				713F4B8B14DD9CF500728173 /* RunCalcMaths.h */,
 				713F4B8C14DD9CF500728173 /* RunCalcMaths.m */,
 				719C673C14D5E88D0043A823 /* Explanations */,
@@ -274,6 +282,7 @@
 				71E9317D14BA22630093C709 /* runner.png in Resources */,
 				71B4B35B14D461600093F065 /* explainPaceCalculator.html in Resources */,
 				71B4B35E14D4749B0093F065 /* explainRacePredictor.html in Resources */,
+				71C7477314F6EFB000A74071 /* explainHeartRateRanges.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,6 +324,7 @@
 				71ECACD914C1E64B00F09566 /* RunCalcExplanationViewController.m in Sources */,
 				71ECACDC14C1E7EA00F09566 /* PredictRaceDetailViewController.m in Sources */,
 				713F4B8D14DD9CF500728173 /* RunCalcMaths.m in Sources */,
+				71C7477014F6EB9800A74071 /* HeartRateDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,6 +479,7 @@
 				713F4B8614DD821100728173 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		71E9314F14B9F3AD0093C709 /* Build configuration list for PBXProject "RunningCalculator" */ = {
 			isa = XCConfigurationList;
