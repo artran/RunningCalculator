@@ -500,7 +500,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="qT9-cx-Dwt">
-                                <rect key="frame" x="194" y="611" width="381" height="37"/>
+                                <rect key="frame" x="194" y="851" width="381" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Explain heart rate ranges">
@@ -514,15 +514,15 @@
                                     <segue destination="OQa-50-JOW" kind="push" id="PHH-JE-cu8"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Rest HR" lineBreakMode="tailTruncation" minimumFontSize="10" id="8n7-8S-CmA">
-                                <rect key="frame" x="194" y="124" width="195" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Rest HR:" lineBreakMode="tailTruncation" minimumFontSize="10" id="8n7-8S-CmA">
+                                <rect key="frame" x="194" y="61" width="195" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="ImW-ZE-mIV">
-                                <rect key="frame" x="396" y="119" width="54" height="31"/>
+                                <rect key="frame" x="396" y="56" width="54" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
@@ -530,21 +530,21 @@
                                     <action selector="distanceEditor:" destination="4" eventType="editingDidEnd" id="6Hd-DH-XCi"/>
                                 </connections>
                             </textField>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Age" lineBreakMode="tailTruncation" minimumFontSize="10" id="Gi6-Oc-DVg">
-                                <rect key="frame" x="194" y="169" width="195" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Age:" lineBreakMode="tailTruncation" minimumFontSize="10" id="Gi6-Oc-DVg">
+                                <rect key="frame" x="194" y="106" width="195" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="ncE-Ai-Kjp">
-                                <rect key="frame" x="397" y="164" width="54" height="31"/>
+                                <rect key="frame" x="397" y="101" width="54" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="MDM-nJ-YeJ">
-                                <rect key="frame" x="194" y="242" width="381" height="37"/>
+                                <rect key="frame" x="194" y="179" width="381" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Calculate heart rate ranges">
@@ -558,60 +558,50 @@
                                     <action selector="calculateButtonPressed:" destination="4" eventType="touchUpInside" id="7Oe-zy-jlL"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Max HR" lineBreakMode="tailTruncation" minimumFontSize="10" id="NKc-Pw-MDR">
-                                <rect key="frame" x="199" y="208" width="62" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Max HR:" lineBreakMode="tailTruncation" minimumFontSize="10" id="NKc-Pw-MDR">
+                                <rect key="frame" x="199" y="145" width="190" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="8kA-eN-1an">
-                                <rect key="frame" x="396" y="203" width="54" height="31"/>
+                                <rect key="frame" x="396" y="140" width="54" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="7L2-8K-rvk">
+                                <rect key="frame" x="199" y="224" width="369" height="578"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="heartRateCell" id="yTR-74-Fuu">
+                                        <rect key="frame" x="0.0" y="22" width="369" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="369" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Predict race from race" id="uXz-aH-OGo"/>
+                    <connections>
+                        <outlet property="heartRateTable" destination="7L2-8K-rvk" id="jNs-oM-Hva"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="1055" y="2426"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="HeartRateDetailViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/HeartRateDetailViewController.h"/>
-        </class>
-        <class className="PredictRaceDetailViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/PredictRaceDetailViewController.h"/>
-        </class>
-        <class className="RunCalcExplanationViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/RunCalcExplanationViewController.h"/>
-        </class>
-        <class className="RunCalcMasterViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/RunCalcMasterViewController.h"/>
-        </class>
-        <class className="TrainingPaceDetailViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TrainingPaceDetailViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="distanceEditor" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="distanceUnitChoice" candidateClass="UISegmentedControl"/>
-                <relationship kind="outlet" name="easyPaceLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="longPaceLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="paceUnitChoice" candidateClass="UISegmentedControl"/>
-                <relationship kind="outlet" name="speedPaceLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="tempoPaceLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="timeTakenHrsEditor" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="timeTakenMinsEditor" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="timeTakenSecsEditor" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="vo2PaceLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="yassoPaceLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation"/>

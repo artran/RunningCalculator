@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HeartRateDetailViewController : UIViewController
+@interface HeartRateDetailViewController : UIViewController <UITableViewDataSource>
 
 @end
