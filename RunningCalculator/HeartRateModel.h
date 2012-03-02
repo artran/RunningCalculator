@@ -10,8 +10,8 @@
 
 @interface HeartRateModel : NSObject
 
-- (void) calculateZonesWithRest:(int)restHr age:(unsigned)age;
-- (void) calculateZonesWithRest:(int)restHr max:(unsigned)maxHr;
-- (int) hrForPerCent:(unsigned)pc;
+- (void) calculateZonesWithRest:(unsigned)restHr age:(unsigned)age;
+- (void) calculateZonesWithRest:(unsigned)restHr max:(unsigned)maxHr;
+- (unsigned) hrForPerCent:(unsigned)pc;
 
 @end
