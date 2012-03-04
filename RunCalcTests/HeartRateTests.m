@@ -44,7 +44,7 @@
     [hrm calculateZonesWithRest:hrRest max:hrMax];
 
     unsigned hr0 = [hrm hrForPerCent:0];
-    STAssertEquals(hr0, hrRest, @"The result hr should have been %i but was %i", hrRest, hr0);
+    STAssertEquals(hr0, hrRest, @"The result hr should have been %u but was %u", hrRest, hr0);
 }
 
 - (void)testFiftyPerCentIsCorrect
@@ -57,7 +57,7 @@
     unsigned hrTest = 0.50 * (hrMax - hrRest) + hrRest;
 
     unsigned hr50 = [hrm hrForPerCent:50];
-    STAssertEquals(hr50, hrTest, @"The result hr should have been %i but was %i", hrTest, hr50);
+    STAssertEquals(hr50, hrTest, @"The result hr should have been %u but was %u", hrTest, hr50);
 }
 
 - (void)testMaxHrWithZeroAgeIs205
@@ -67,8 +67,10 @@
     HeartRateModel *hrm = [[HeartRateModel alloc] init];
     [hrm calculateZonesWithRest:hrRest age:age];
 
+    unsigned hrTest = 205;
+    
     unsigned hr100 = [hrm hrForPerCent:100];
-    STAssertEquals(hr100, 205, @"The result hr should have been 205 but was %i", hr100);
+    STAssertEquals(hr100, hrTest, @"The result hr should have been %u but was %u", hrTest, hr100);
 }
 
 - (void)testMaxHrWithFiftyAgeIsCorrect
@@ -78,10 +80,10 @@
     HeartRateModel *hrm = [[HeartRateModel alloc] init];
     [hrm calculateZonesWithRest:hrRest age:age];
 
-    unsigned hrTest = 205 - (age/2);
+    unsigned hrTest = 205 - (age/2.0);
 
     unsigned hr100 = [hrm hrForPerCent:100];
-    STAssertEquals(hr100, hrTest, @"The result hr should have been hrTest but was %i", hr100);
+    STAssertEquals(hr100, hrTest, @"The result hr should have been hrTest but was %u", hr100);
 }
 
 @end
